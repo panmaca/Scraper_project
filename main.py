@@ -52,9 +52,9 @@ def get_obce(url_celek):
                     vysledky_obce = get_vysledky(href) #ukládám do proměnné
                     vysledky_vsechny_obce.append(vysledky_obce) #ukládám do
                     # seznamu
-                    kody.append(bunky_tabulky[0].text)
-                    obce_nazvy.append(bunky_tabulky[1].text)
-                    time.sleep(5)
+                    kody.append(bunky_tabulky[0].text) #ukládám kód
+                    obce_nazvy.append(bunky_tabulky[1].text) #ukládám obci
+                    time.sleep(3) #aby to nebyl agresivní scraping
 
     return vysledky_vsechny_obce, kody, obce_nazvy
 
@@ -98,7 +98,7 @@ final_vysledky = (get_obce(url_celek))
 
 print("Ukládám do souboru:",nazev_souboru)
 
-with (open(nazev_souboru, "w", newline="", encoding="utf-8") as
+with (open(nazev_souboru, "w", newline="", encoding="utf-8-sig") as
 csvfile):
     writer = csv.writer(csvfile)
     vysledky_obci = final_vysledky[0]
