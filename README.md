@@ -30,7 +30,7 @@ python main.py "https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumn
 ```
 
 Průběh stahování:
-```bash
+```text
 Stahuji data z vybraného url: https://www.volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=12&xnumnuts=7103
 Ukládám do souboru: vysledky_prostejov.csv
 Hotovo, ukončuji election-scraper.
