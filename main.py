@@ -1,3 +1,11 @@
+"""
+main.py: třetí projekt do Engeto Datová analýza s Pythonem
+
+author: Marcela Trávníčková
+email: travnickovamarcela@gmail.com
+discord: Marcela T. (pan.maca)
+"""
+
 import requests
 from bs4 import BeautifulSoup as bs
 import csv
